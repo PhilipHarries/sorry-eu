@@ -1,0 +1,12 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source: {repository: philipharries/html_tidy}
+
+inputs:
+- name: sorryeu-repo
+
+run:
+  path: ./sorryeu-repo/ci/scripts/html-lint.sh

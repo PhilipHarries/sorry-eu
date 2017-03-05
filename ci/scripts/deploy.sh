@@ -15,6 +15,6 @@ echo user: "${SSH_USER}"
 echo target: "${TARGET_SERVER}"
 echo path: "${DEPLOY_PATH}"
 
-scp -i "${HOME}/.ssh/id_rsa" ./sorryeu-repo/site/* "${SSH_USER}@${TARGET_SERVER}:${DEPLOY_PATH}"
+scp -r -i "${HOME}/.ssh/id_rsa" ./sorryeu-repo/site/* "${SSH_USER}@${TARGET_SERVER}:${DEPLOY_PATH}"
 
 exit 0
